@@ -27,13 +27,14 @@ h2 {
   border-bottom: 5px solid;
   border-left: 5px solid;
   text-align: center;
-  width: 50%;
+  width: 150px;
   float: right;
   margin: 0;
   background-color: pink;
 }
 
 p {
+  clear: right;
   padding: 10px;
   margin: 0;
 }
@@ -61,8 +62,8 @@ p {
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-6, .col-md-12 {
     float: left;
-
   }
+
   .col-md-6 {
     width: 50%;
   }
