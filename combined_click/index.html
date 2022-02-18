@@ -132,13 +132,19 @@
       .show {
         display: block;
       }
+
+      .red {
+        background: red;
+      }
     </style>
     <script>
       function opendrop() {
         document.getElementById("myDropdown").classList.toggle("show");
+        document.getElementById("red").classList.toggle("red");
       }
       function closedrop() {
         document.getElementById("myDropdown").classList.toggle("show");
+        document.getElementById("red").classList.toggle("red");
       }
     </script>
   </head>
@@ -146,7 +152,7 @@
 
     <ul id="backtotop">
       <li class="dropdown">
-        <a onclick="opendrop()" class="dropbtn">Dropdown</a>
+        <a onclick="opendrop()" class="dropbtn" id="red">Dropdown</a>
         <div id="myDropdown" class="dropdown-content">
           <a onclick="closedrop()" href="#first">Link 1</a>
           <a onclick="closedrop()" href="#second">Link 2</a>
